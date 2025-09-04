@@ -12,7 +12,7 @@ public class Principal {
 		Lista l = new Lista();
 		while(cont<=4) {
 			
-			l.adicionarNoComeco(in.nextInt());
+			l.adicionarNoComeco(in.next());
 			
 			cont++;
 			
@@ -25,13 +25,13 @@ public class Principal {
 		l.adicionarPorPosicao(3, 12);
 		
 		l.listarElementos();
+		
+		
 		/*
 		 * 
-		 l.removerInicio();
 		 
 		 l.listarElementos();
 		 
-		 l.removerDoFim();
 		 
 		 l.listarElementos();
 		 
