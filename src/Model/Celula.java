@@ -3,26 +3,26 @@ package Model;
 public class Celula {
 	
 	private Celula proximo;
-	private Object elemento;
+	private Produto produto;
 	private Celula anterior;
 	
-	public Celula(Celula proximo, Object elemento, Celula anterior) {
+	public Celula(Celula proximo, Produto produto, Celula anterior) {
 		super();
 		this.proximo = proximo;
-		this.elemento = elemento;
+		this.produto = produto;
 		this.anterior = anterior;
 	}
-	public Celula(Celula proximo, Object elemento) {
+	public Celula(Celula proximo, Produto produto) {
 		super();
 		this.proximo = proximo;
-		this.elemento = elemento;
+		this.produto = produto;
 	}
 	public Celula() {
 		super();
 	}
-	public Celula(Object elemento, Celula anterior) {
+	public Celula(Produto produto, Celula anterior) {
 		super();
-		this.elemento = elemento;
+		this.produto = produto;
 		this.anterior = anterior;
 	}
 	
@@ -32,11 +32,11 @@ public class Celula {
 	public void setProximo(Celula proximo) {
 		this.proximo = proximo;
 	}
-	public Object getElemento() {
-		return elemento;
+	public Produto getProduto() {
+		return produto;
 	}
-	public void setElemento(Object elemento) {
-		this.elemento = elemento;
+	public void setProduto(Produto produto) {
+		this.produto = produto;
 	}
 	public Celula getAnterior() {
 		return anterior;
@@ -44,7 +44,5 @@ public class Celula {
 	public void setAnterior(Celula anterior) {
 		this.anterior = anterior;
 	}
-	
-	
 
 }
